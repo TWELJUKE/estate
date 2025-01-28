@@ -16,3 +16,9 @@ if __name__ == "__main__":
             "forget to activate a virtual environment?"
         ) from exc
     execute_from_command_line(sys.argv)
+
+import os
+import sys
+
+# プロジェクトルートをPythonパスに追加
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
